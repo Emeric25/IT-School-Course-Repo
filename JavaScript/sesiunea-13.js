@@ -21,7 +21,10 @@
      (Ctrl+Alt+N) → vezi rezultatul în Output.
    GREȘEALĂ FRECVENTĂ: Scrii console.log("eveniment") cu ghilimele: apare cuvântul
      eveniment, nu valoarea din cutie. */
-
+let nume ="hackathon"
+let sala = "Sala A2"
+console.log (nume)
+console.log (sala)
 
 /* ===== Exercițiul 2 · SINGUR · 2 min · Locurile libere, în variabilă =====
    CE FACI: Creează o variabilă locuriLibere cu valoarea 40 și afișeaz-o cu console.log.
@@ -35,6 +38,8 @@
    GREȘEALĂ FRECVENTĂ: Scrii console.log("locuriLibere") cu ghilimele: apare numele, nu
      valoarea 40. */
 
+let locLiber = 40
+console.log (locLiber)
 
 /* ===== Exercițiul 3 · GHIDAT · 4 min · Ce tip are fiecare valoare? =====
    CE FACI: Află tipul a trei valori cu typeof: textul „Hackathon”, numărul 40 și valoarea
@@ -51,8 +56,13 @@
      adevărat sau fals · îl pui în console.log ca să-l vezi.
    GREȘEALĂ FRECVENTĂ: Scrii typeof "40" și te miri că iese string: ghilimelele fac din
      cifre un text. */
+let numeM = "Mihai"
+let numar = 25
+let choose = true
 
-
+console.log(typeof(numeM))
+console.log(typeof(numar))
+console.log(typeof(choose))
 /* ===== Exercițiul 4 · SINGUR · 4 min · Workshop CSS, pe tipuri =====
    CE FACI: Descrie Workshop CSS în variabile: workshop (text), locuriWorkshop 25 (număr),
      esteGratuitWorkshop false (boolean) și salaWorkshop fără valoare. Afișează tipul
@@ -70,6 +80,15 @@
      (fără =) lasă cutia goală · typeof salaWorkshop → undefined.
    GREȘEALĂ FRECVENTĂ: Scrii "false" cu ghilimele: devine text, nu boolean. */
 
+   let workshop = "text"
+   let locuriWorkshop = 25 
+   let esteGratuitWorkshop = "true"
+   let salaWorkshop 
+
+   console.log(typeof(workshop))
+   console.log(typeof(locuriWorkshop))
+   console.log(typeof(esteGratuitWorkshop))
+   console.log(typeof(salaWorkshop))
 
 /* ===== Exercițiul 5 · GHIDAT · 5 min · Toți operatorii, pe rând =====
    CE FACI: Încearcă pe rând câte un operator din fiecare familie, pe datele hackathonului
@@ -95,8 +114,17 @@
      · && || ! → logic, combină true și false · fiecare calcul stă într-un console.log.
    GREȘEALĂ FRECVENTĂ: Scrii 40 = 40 în loc de 40 === 40: cu un singur = pui o valoare, nu
      compari. */
-
-
+     
+    console.log(50 +18)
+    console.log( 40 - 28)
+    console.log(40 * 2)
+    console.log(40 / 2)
+    console.log( 49 < 60)
+    console.log( 40 > 35)
+    console.log( 100 === 100)
+    console.log( true && false)
+    console.log(true || false)
+    console.log(true)
 /* ===== Exercițiul 6 · GHIDAT · 5 min · Câte locuri mai sunt libere? =====
    CE FACI: Din 40 de locuri, 28 sunt ocupate. Calculează locurile rămase cu variabile și
      operatorul -, apoi afișează un mesaj cu +. Facem împreună calculul.
@@ -108,7 +136,10 @@
    INDICIU: locuri - inscrisi → scade două numere · rezultatul se salvează într-o variabilă
      nouă · "text" + variabilă → lipește textul de valoare.
    GREȘEALĂ FRECVENTĂ: Uiți spațiul din text: iese Locuri libere:12, lipit. */
-
+let locuriLibere = 20;
+let locuriOcupate = 9;
+let locuriRamase = locuriLibere - locuriOcupate;
+console.log( "Locuri ramase : " + locuriRamase)
 
 /* ===== Exercițiul 7 · SINGUR · 4 min · Se mai poate înscrie cineva? =====
    CE FACI: În același fișier: hackathonul primește înscrieri dacă mai are locuri rămase și
@@ -123,7 +154,12 @@
      · && → true doar când ambele sunt true.
    GREȘEALĂ FRECVENTĂ: Scrii pret = 0 în loc de pret === 0: cu un singur = pui o valoare, nu
      compari. */
+let pret = 0;
+let areLocui= locuriRamase > 0;
+let esteGratuit = pret === 0;
+let sePoateInscrie = areLocui && esteGratuit;
 
+console.log(sePoateInscrie)
 
 /* ===== Exercițiul 8 · SINGUR · 3 min · Evenimentul tău =====
    CE FACI: Alege un eveniment real, al tău: un meci, un concert, un meetup. Pune în
@@ -140,6 +176,13 @@
      true dacă prețul e 0 · console.log(numeTau) și console.log(gratuitTau) → afișezi.
    GREȘEALĂ FRECVENTĂ: Schimbi numele locuriTau sau pretTau: sesiunea 14 le reia, deci
      păstrează-le exact așa. */
+
+let numeleTau = "Concert in natura"
+let locurile = 30
+let pretul = 55
+let evGratuit = pretul === 0;
+
+console.log( numeleTau + " " + evGratuit)
 
 
 /* ===== TEMĂ DE ACASĂ · Meetup-ul, descris în JavaScript =====
@@ -166,3 +209,17 @@
      tipul.
    GREȘEALĂ FRECVENTĂ: Scrii typeof "40" și te miri că iese string: ghilimelele fac din
      cifre un text. */
+
+    let numeMeetup = "First steps to become rich";
+    let locuriMeetup = "Piata Uniri";
+    let zi = "Luni";
+    let ora = 18;
+    let pretMeetup = 15;
+    
+
+    console.log( numeMeetup)
+    console.log( "Locuri libere : " + locuriLibere)
+    console.log( typeof(zi))
+    console.log( typeof(ora))
+    console.log( typeof(evGratuit))
+    console.log (  numeMeetup + " va avea loc in " + locuriMeetup + " in ziua de " + zi  + " la ora : " + ora )
